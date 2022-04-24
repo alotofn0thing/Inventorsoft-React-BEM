@@ -1,0 +1,81 @@
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+
+	&__img {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 1;
+		img {
+			width: 628px;
+			height: 391px;
+			filter: drop-shadow(0px 4px 4px #00000066);
+		}
+	}
+	&__img-descr {
+		width: 277px;
+		height: 38px;
+		font-family: 'Montserrat';
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 170%;
+		letter-spacing: 0.1em;
+		color: #504a4a;
+		margin-top: 10%;
+	}
+	&__descr {
+		transition: all 0.8s ease 0s;
+		transform: translate(-10%, 5%);
+		text-align: left;
+		padding: 68px 55px 76px 127px;
+		width: 720px;
+		height: 353px;
+		background: #6279ff;
+		filter: drop-shadow(0px 4px 4px #00000066);
+		&:hover {
+			transform: translate(0, 0);
+		}
+	}
+	&__descr-title {
+		height: 38px;
+		font-family: 'PT Serif';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 170%;
+		letter-spacing: 0.1em;
+		color: #ffffff;
+		margin: 0 0 16px 0;
+	}
+	&__descr-text {
+		width: 538px;
+		height: 155px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 170%;
+		margin: 0;
+		margin-top: 16px;
+		letter-spacing: 0.1em;
+		color: #ffffff;
+	}
+}
+.mirrored-card {
+	flex-direction: row-reverse;
+	.card__descr {
+		filter: drop-shadow(0px 4px 4px #00000066);
+		transition: all 0.8s ease 0s;
+		text-align: right;
+		transform: translate(10%, 5%);
+		padding: 68px 127px 76px 55px;
+		&:hover {
+			transform: translate(0, 0);
+		}
+	}
+	.card__descr-title {
+	}
+}

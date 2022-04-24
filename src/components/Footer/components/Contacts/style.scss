@@ -1,0 +1,35 @@
+.feedback__contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-grow: 1;
+	background: linear-gradient(0deg, #0063b2e0, #0063b2e0),
+		url('../../../../assets/images/footer-image.png');
+	background-size: cover;
+
+	&-items {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-basis: 350px;
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		gap: 30px;
+	}
+	&-icon {
+		width: 60px;
+		height: 60px;
+	}
+	&-info {
+		font-family: 'Montserrat';
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 30px;
+		letter-spacing: 0.1em;
+		color: #ffffff;
+	}
+}

@@ -1,0 +1,43 @@
+.footer {
+	&__nav {
+		position: relative;
+		top: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		width: 1060px;
+		height: 96px;
+		background: #ffffff;
+		box-shadow: 0px 4px 15px #00000040;
+	}
+	&__copyright {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 62px;
+		background: #14202d;
+	}
+	&__copyright-text {
+		font-family: 'Lato';
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.1em;
+
+		color: #ffffff;
+
+		color: #ffffff;
+		a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+	}
+}
+
+.feedback {
+	display: flex;
+	height: 713px;
+}
